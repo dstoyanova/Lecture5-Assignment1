@@ -14,6 +14,10 @@
 		7554FB921AD5BB44009EFD8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7554FB911AD5BB44009EFD8A /* Images.xcassets */; };
 		7554FB951AD5BB44009EFD8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7554FB931AD5BB44009EFD8A /* LaunchScreen.xib */; };
 		7554FBA11AD5BB44009EFD8A /* Lecture5_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7554FBA01AD5BB44009EFD8A /* Lecture5_1Tests.m */; };
+		7554FBB01AD5C148009EFD8A /* MMACinemasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7554FBAF1AD5C148009EFD8A /* MMACinemasViewController.m */; };
+		7554FBB31AD5CD60009EFD8A /* MMAProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7554FBB21AD5CD60009EFD8A /* MMAProgramViewController.m */; };
+		7583A89E1ADE6A27005CFD68 /* imax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7583A89C1ADE6A27005CFD68 /* imax.jpg */; };
+		7583A89F1ADE6A27005CFD68 /* cinemacity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7583A89D1ADE6A27005CFD68 /* cinemacity.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		7554FB9A1AD5BB44009EFD8A /* Lecture5-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lecture5-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7554FB9F1AD5BB44009EFD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7554FBA01AD5BB44009EFD8A /* Lecture5_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lecture5_1Tests.m; sourceTree = "<group>"; };
+		7554FBAE1AD5C148009EFD8A /* MMACinemasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMACinemasViewController.h; sourceTree = "<group>"; };
+		7554FBAF1AD5C148009EFD8A /* MMACinemasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMACinemasViewController.m; sourceTree = "<group>"; };
+		7554FBB11AD5CD60009EFD8A /* MMAProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAProgramViewController.h; sourceTree = "<group>"; };
+		7554FBB21AD5CD60009EFD8A /* MMAProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAProgramViewController.m; sourceTree = "<group>"; };
+		7583A89C1ADE6A27005CFD68 /* imax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imax.jpg; sourceTree = "<group>"; };
+		7583A89D1ADE6A27005CFD68 /* cinemacity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cinemacity.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +91,16 @@
 		7554FB831AD5BB44009EFD8A /* Lecture5-1 */ = {
 			isa = PBXGroup;
 			children = (
+				7583A89C1ADE6A27005CFD68 /* imax.jpg */,
+				7583A89D1ADE6A27005CFD68 /* cinemacity.jpg */,
 				7554FB881AD5BB44009EFD8A /* AppDelegate.h */,
 				7554FB891AD5BB44009EFD8A /* AppDelegate.m */,
 				7554FB8B1AD5BB44009EFD8A /* ViewController.h */,
 				7554FB8C1AD5BB44009EFD8A /* ViewController.m */,
+				7554FBAE1AD5C148009EFD8A /* MMACinemasViewController.h */,
+				7554FBAF1AD5C148009EFD8A /* MMACinemasViewController.m */,
+				7554FBB11AD5CD60009EFD8A /* MMAProgramViewController.h */,
+				7554FBB21AD5CD60009EFD8A /* MMAProgramViewController.m */,
 				7554FB8E1AD5BB44009EFD8A /* Main.storyboard */,
 				7554FB911AD5BB44009EFD8A /* Images.xcassets */,
 				7554FB931AD5BB44009EFD8A /* LaunchScreen.xib */,
@@ -163,6 +179,7 @@
 		7554FB791AD5BB43009EFD8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MMA;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Desislava Stoyanova";
 				TargetAttributes = {
@@ -201,6 +218,8 @@
 			files = (
 				7554FB901AD5BB44009EFD8A /* Main.storyboard in Resources */,
 				7554FB951AD5BB44009EFD8A /* LaunchScreen.xib in Resources */,
+				7583A89E1ADE6A27005CFD68 /* imax.jpg in Resources */,
+				7583A89F1ADE6A27005CFD68 /* cinemacity.jpg in Resources */,
 				7554FB921AD5BB44009EFD8A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +241,8 @@
 				7554FB8D1AD5BB44009EFD8A /* ViewController.m in Sources */,
 				7554FB8A1AD5BB44009EFD8A /* AppDelegate.m in Sources */,
 				7554FB871AD5BB44009EFD8A /* main.m in Sources */,
+				7554FBB01AD5C148009EFD8A /* MMACinemasViewController.m in Sources */,
+				7554FBB31AD5CD60009EFD8A /* MMAProgramViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +433,7 @@
 				7554FBA61AD5BB44009EFD8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7554FBA71AD5BB44009EFD8A /* Build configuration list for PBXNativeTarget "Lecture5-1Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +442,7 @@
 				7554FBA91AD5BB44009EFD8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

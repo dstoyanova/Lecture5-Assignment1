@@ -16,12 +16,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Sign in";
+    
+    self.passwordTextField.secureTextEntry = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"CinemasScreen"]) {
+        BOOL segueShouldOccur = ([self.usernameTextField.text isEqualToString:@"test"] &&
+                                 [self.passwordTextField.text isEqualToString:@"123456"]);
+        if (!segueShouldOccur) {
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"The credentials you have entered are invalid."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:@"Cancel", nil];
+            
+            [alert show];
+            
+            return NO;
+        }
+    }
+    return YES;
 }
 
 @end

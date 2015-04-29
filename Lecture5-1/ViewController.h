@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMACinemasViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
-
